@@ -1,0 +1,26 @@
+.cover {
+	background: url("../images/background.jpeg") no-repeat;
+	background-size: 100%;
+	min-height: 300px;
+	margin-bottom: 10px;
+}
+
+.cover-text {
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px;
+}
+
+i.fa-train {
+	font-size: 2em;
+	display: inline-block;
+}
+
+.table>thead>tr>th {
+	border: none;
+}
+
+.thead-inverse th {
+ 	color: #fff;
+ 	background-color: #755142;
+}

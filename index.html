@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TrainTrax | When's Your Next Ride?</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+</head>
+
+<body>
+	<div class="cover">
+		<div class="container">
+			<i class="fa fa-train"></i>
+		    <h1 class="cover-text">TrainTrax</h1>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div id="add-train" class="panel panel-default">
+			<div class="panel-heading">Add A Train</div>
+			<div class="panel-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<input class="form-control" type="text" id="train-name" placeholder="Train Name">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" id="destination" placeholder="Destination">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" id="first-train" placeholder="First Train (HH:mm)">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" id="frequency" placeholder="Frequency (30 min)">
+					</div>
+					<div class="form-group">
+						<button type="submit" id="new-train" class="btn btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="train-table">
+	        <table class="table table-responsive table-hover">
+	            <thead class="thead-inverse">
+	                <tr>
+	                    <th>Train Name</th>
+	                    <th>Destination</th>
+	                    <th>Frequency</th>
+	                    <th>Next Arrival</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <tr>
+	                    <th scope="row">Crazy Train</th>
+	                    <td>6th Street</td>
+	                    <td>30 min</td>
+	                    <td>7PM</td>
+	                </tr>
+	            </tbody>
+	        </table>
+		</div>
+	</div>
+    <script src="assets/js/application.js"></script>
+</body>
+
+</html>
